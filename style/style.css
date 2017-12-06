@@ -84,6 +84,12 @@ footer{
 #flowmenu ul li a:hover{
 	text-decoration: underline;
 }
+#imgfor  {
+	width: 80%; 
+}
+#imgfor a img{
+	width: 30%;
+	padding: 4%;
+}
 
-	
 	
