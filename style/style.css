@@ -1,5 +1,89 @@
 /* CSS Document */
-
+@import url('https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600');/*google font import*/
+/* fælles design på alle sider*/
 body{
 	
+	font-family: 'Montserrat', sans-serif;
+	background-color: #F1F1F1;
+	padding: 0; 
+	margin: 0; 
 }
+/*Logo*/
+#logo{
+	padding: 2%;
+}
+
+footer{
+	height: 200px;
+	width: 100%;
+	box-sizing: border-box;
+		
+}
+#footercontent{
+	box-sizing: border-box;
+	height: 200px;
+	color: #000000;
+    text-align: center;
+	padding: 75px;
+	
+}
+#footercontent a{
+	height: 60px;
+	width: 60px;
+	color:#000000;
+	border: thin solid black;
+	border-radius: 100%;
+	display: inline-block; 
+	text-align: center; 
+	padding: 10px;
+	background-color: #FAFDFB;
+	
+}
+#footercontent a i{
+	font-size: 40px;
+	padding: 10px;
+}
+/*  forside */ 
+/*https://stackoverflow.com/questions/26518339/how-to-make-a-banner-image - kode hjælp*/
+#bannerimage {
+  width: 100%;
+ /* background-image: url(../img/flow_3_1.jpg);*/
+  height: 100vh;
+  background-position: center;
+}
+#navn{
+	text-transform: uppercase;
+	margin: auto; 
+}
+#navn h1 {
+	font-weight: 400; 
+}
+#navn h3{
+	font-weight: 300;
+}
+#mitarb{
+	height: 100vh;
+	color: #8E8E8C; 
+}
+#mitarb h1{
+	font-weight: 400;
+	padding: 2%; 
+}
+#flowmenu ul li{
+	list-style: none;
+	padding-right: 4%; 
+}
+
+#flowmenu ul li a{
+	text-decoration: none;
+	display: inline-block;
+	float: right;
+	padding-left: 2%; 
+	color: #8E8E8C;
+}
+#flowmenu ul li a:hover{
+	text-decoration: underline;
+}
+
+	
+	
