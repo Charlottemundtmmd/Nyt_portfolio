@@ -9,14 +9,45 @@ body{
 	margin: 0; 
 }
 
-
-#forheader{
-	display: inline;
-}
 /*Logo - forside*/
 #logo{
 	padding: 2%;
 	width: 10%;
+}
+
+nav ul{ 
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	float: right;
+	width: 40%; 
+	
+}
+nav ul li{
+	list-style:none;
+	display: inline-block;
+	padding-right: 8%;
+
+}
+nav ul li a {
+	text-decoration: none;
+	color: black; 
+	font-weight: 300;
+}
+nav ul li a:hover{
+	text-decoration: underline;
+}
+nav ul ul{
+	display: none; 
+	position: absolute;
+}
+nav ul li:hover >ul{
+		display: block;
+}
+
+nav ul ul li{
+	display: block;
+ 	padding-top: 1%
 }
 
 /* footer */
@@ -45,57 +76,17 @@ footer{
 	text-align: center; 
 	padding: 1%;
 	background-color: #FAFDFB;
-	
 }
+
 #footercontent a i{
 	font-size:35px;
 	padding: 1%px;
 }
 /*  forside */ 
-/*navigation forside*/
-.hero-nav ul{ 
-	list-style: none;
-	margin: 0;
-	padding: 0;
-	float: right;
-	width: 40%; 
-	
-}
-.hero-nav ul li{
-	list-style:none;
-	display: inline-block;
-	padding-right: 8%;
-
-}
-.hero-nav ul li a {
-	text-decoration: none;
-	color: black; 
-	font-weight: 300;
-}
-.hero-nav ul li a:hover{
-	text-decoration: underline;
-}
-.hero-nav ul ul{
-	display: none; 
-	position: absolute;
-}
-.hero-nav ul li:hover >ul{
-		display: block;
-}
-.hero-nav ul ul li{
-	display: block;
- 	padding-top: 1%
-}
-.hero-nav i {
-	display: none;
-}
+ /*https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_hero_image*/
 .hero-image {
- /* background-image: url("../img/flow_4_ 1_1.jpg"); - indsæt det rigtig billed */
-  height: 100vh;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  position: relative;
+  	background-image: url(" ../img/flow_4_ 1_1.jpg");
+	height:100vh;
 }
 
 .hero-text {
@@ -104,18 +95,8 @@ footer{
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  
-}
-.hero-image h1{
-	text-transform: uppercase; 
-	font-weight:400; 
-	color: black;
-	
-}
-.hero-text h3{
-	text-transform: uppercase;
-	font-weight: 300; 
-	color: black;
+  color: black;
+text-transform: uppercase; 
 }
 
 #mitarb{
@@ -143,18 +124,13 @@ footer{
 }
 #imgfor  {
 	width: 80%; 
-}
+ 	
 .forside {
-	width: 90%;
+	width: 100%;
 	display: inline-block; 
 	
 }
 .forside img {
 	width: 30%;
-}
-/* fælles styling undersider*/
-.ulogo{
 	padding: 2%;
-	width: 10%;
 }
-	
