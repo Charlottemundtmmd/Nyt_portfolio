@@ -83,22 +83,37 @@ footer{
 	padding: 1%px;
 }
 /*  forside */ 
- /*https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_hero_image*/
-.hero-image {
-  	background-image: url(" ../img/flow_4_ 1_1.jpg");
-	height:100vh;
+ /*https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_hero_image + */
+#header-container {
+    width: 100%;
+	height: 100vh;
+}
+#header {
+	/* får hjælp til backgruond billede*/
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100vh;
+    margin: auto;
+}
+#header-containerunder{
+	height: 20vh;
 }
 
 .hero-text {
-  text-align: center;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  color: black;
-text-transform: uppercase; 
+	text-align: center;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	color: black;
+	text-transform: uppercase; 
 }
-
+.hero-text h1{
+	font-weight: 400;
+}
+.hero-text h3{
+	font-weight: 300;
+}
 #mitarb{
 	color: #8E8E8C; 
 }
@@ -123,14 +138,27 @@ text-transform: uppercase;
 	text-decoration: underline;
 }
 #imgfor  {
-	width: 80%; 
- 	
+	width: 100%;
+}	
 .forside {
 	width: 100%;
 	display: inline-block; 
+	margin: auto;
+}
+
+.forside img {
+	padding: 2%;
 	
 }
-.forside img {
-	width: 30%;
-	padding: 2%;
+.forside a {
+	text-decoration: none;
+}
+/*Egen projekter*/ 
+#egneproj{
+	width:100%; 
+	padding-left: 10%; 
+	margin: auto;
+}
+#egneproj img{
+	width: 40%;
 }
