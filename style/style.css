@@ -49,32 +49,37 @@ nav ul ul li{
 	display: block;
  	padding-top: 1%
 }
+.aktuelside{
+	text-decoration: line-through;
+}
 h1{
 	color: #8E8E8C;
 	font-size: 3em;
-	padding: 4%;
+	padding: 2%;
 	font-weight: 400;
-	
-	
 }
 h2{
 	color: #8E8E8C;
 	font-size: 2em;
 	font-weight: 400;
+	padding: 2%;
 }
 h3 {
 	color: #8E8E8C;
 	font-weight: 300; 
 	font-size: 30px;
-	padding-top: 0;
+	padding: 2%;
 }
 h4{
 	color: #8e8e8c; 
 	font-weight: 300; 
+	font-size:25px;
+	padding: 2%
 }
 p{ 
 	font-size:20px; 
 	color: black;
+	padding: 2%;
 }
 /* footer */
 footer{
@@ -186,50 +191,75 @@ footer{
 	text-decoration: none;
 }
 /*Egen projekter*/ 
+main{
+	height: auto;
+}
 #egneproj{
 	width:100%; 
 	padding-left: 10%; 
 	margin: auto;
+	display: inline;
 }
 #egneproj img{
 	width: 40%;
 }
 /* Undersider */
-
-.udvikling{
-	width: 40%;
+.undersidecontainer{
+	display: inline-flex;
+	text-align:center;
 	padding: 2%;
 	margin: auto;
+}
+#knapper{
+	width: 50%;
+	float: left;
+	padding-right:0;
+}
+a.button{
+	height: 40px;
+	font-size: 30px;
+	font-weight: 200;
+	background-color: #F4BFF4;
+	display: block;
+	margin-bottom: 4%;
+	text-decoration: none;
+	color: #0E0E0D;
+	width: 90%;
+	text-align: center;
+}
+.imgcontainer{
+	width: 50%;
+	float: right;
+}
+.undersidebillede{
+	width: 90%;
+}
+.udvikling{
+	width: 60%;
+	margin: auto;
+	padding: 2%;
+	background-color: #FAFDFB;
 }
 .udbillede{
 	width: 100%;
-
 }
-.ucontianer{
-	align-items: flex-end;
-	padding: 4%; 
-	margin: auto;
-	height: 50vh;
+.vejrapps{
+	display: inline-flex;
 }
-.usbillede{
-	width: 40%; 
-	float: right;
-}
-#links{
-	list-style: none;
-	font-size: 30px;
-}
-#links a{
-	text-decoration: none;
-	color: #F4BFF4;
-	display: block;
-	background-color: #8E8E8C;
+.vejrapps iframe {
+	justify-content: space-between;
 }
 /* Læring */
 #ler{
-	width: 40%;
+	width: 60%;
 	padding: 2%;
 	margin: auto;
+	background-color: #FAFDFB;
+}
+.lerbilled{
+	
+
+	width: 100%;
 }
 /*projekt oversigt side */
 #oversigt {
@@ -238,12 +268,33 @@ footer{
 	margin: auto;
 }
 /*kontakt */
-
+#kontakt{
+	background-color: #FAFDFB;
+	width: 40%;
+	text-align: center;
+	margin-left: 5%;
+}
 /*hvem er jeg ? */
 #hvem{
-	width: 40%;
+	width: 60%;
 }
 /* cv */
 .cv {
-	display: inline;
+	margin: auto;
+	padding: 2%;
+}
+.secboks {
+	background-color: #FAFDFB;
+	padding: 0;
+}
+.secboks div{
+	
+}
+.udlogo{
+	max-height: 100px;
+	float: right;
+}
+
+.secboks h3{
+	padding: 0;
 }
