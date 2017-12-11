@@ -31,7 +31,7 @@ nav ul li{
 }
 nav ul li a {
 	text-decoration: none;
-	color: black; 
+	color: black;
 	font-weight: 300;
 }
 nav ul li a:hover{
@@ -49,7 +49,33 @@ nav ul ul li{
 	display: block;
  	padding-top: 1%
 }
-
+h1{
+	color: #8E8E8C;
+	font-size: 3em;
+	padding: 4%;
+	font-weight: 400;
+	
+	
+}
+h2{
+	color: #8E8E8C;
+	font-size: 2em;
+	font-weight: 400;
+}
+h3 {
+	color: #8E8E8C;
+	font-weight: 300; 
+	font-size: 30px;
+	padding-top: 0;
+}
+h4{
+	color: #8e8e8c; 
+	font-weight: 300; 
+}
+p{ 
+	font-size:20px; 
+	color: black;
+}
 /* footer */
 footer{
 	height: 10vh;
@@ -89,14 +115,17 @@ footer{
 	height: 100vh;
 }
 #header {
-	/* får hjælp til backgruond billede*/
+	background-image: url(../img/desk.jpeg); /* find billede på https://www.pexels.com/search/desk/*/ 
     background-repeat: no-repeat;
     width: 100%;
     height: 100vh;
     margin: auto;
 }
-#header-containerunder{
-	height: 20vh;
+/*Header på undersider*/
+.header-containerunder{ 
+	height: 5vh;
+	padding: 0; 
+	display: inline;
 }
 
 .hero-text {
@@ -139,11 +168,14 @@ footer{
 }
 #imgfor  {
 	width: 100%;
+	margin: auto;
+	padding: 2%;
 }	
 .forside {
 	width: 100%;
 	display: inline-block; 
 	margin: auto;
+	padding-left: 8%;
 }
 
 .forside img {
@@ -161,4 +193,57 @@ footer{
 }
 #egneproj img{
 	width: 40%;
+}
+/* Undersider */
+
+.udvikling{
+	width: 40%;
+	padding: 2%;
+	margin: auto;
+}
+.udbillede{
+	width: 100%;
+
+}
+.ucontianer{
+	align-items: flex-end;
+	padding: 4%; 
+	margin: auto;
+	height: 50vh;
+}
+.usbillede{
+	width: 40%; 
+	float: right;
+}
+#links{
+	list-style: none;
+	font-size: 30px;
+}
+#links a{
+	text-decoration: none;
+	color: #F4BFF4;
+	display: block;
+	background-color: #8E8E8C;
+}
+/* Læring */
+#ler{
+	width: 40%;
+	padding: 2%;
+	margin: auto;
+}
+/*projekt oversigt side */
+#oversigt {
+	width:40%; 
+	padding:2%; 
+	margin: auto;
+}
+/*kontakt */
+
+/*hvem er jeg ? */
+#hvem{
+	width: 40%;
+}
+/* cv */
+.cv {
+	display: inline;
 }
