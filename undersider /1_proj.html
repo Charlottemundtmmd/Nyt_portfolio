@@ -15,6 +15,7 @@
             <a href="../index.html"><img src="../img/logo.png" alt="logo"></a>
             </div>
             <div id="nav">
+			<button onClick="myFunction()"> <i class="fa fa-bars" aria-hidden="true"></i> </button>
             <nav id="myNav">
 		 <ul>
 			<li><a href="proj_over.html" target="_self" class="aktuelside">Mit arbejde</a>
@@ -53,7 +54,7 @@
 		<img src="../img/flow_1.jpg" alt="flow 1" class="udbillede">
 		<h3>Mine tanker om min første udarbejdelse</h3>
 		<p>Det er godt nok meget lyserødt, jeg var enlig meget tilfreds med det, jeg husker dog at jeg allerede ved afleveringen tænkte dem måske var lidt for meget af det gode med den lyserøde farve, som den farve der bar hele portfolioet. </p>
-		<p>Jeg kom rundt om alle de tin som jeg gerne ville have med.</p>
+		<p>Jeg kom rundt om alle de ting som jeg gerne ville have med.</p>
 		<p>Jeg valgte at kører dem meget simplet, jeg var inspireret af Pantones farvekort. </p>
 <!-- Husk billede -->
 		<h3> Remake af flow 1</h3>
@@ -62,6 +63,8 @@
 		<p>Jeg har bruge billeder fra Google, hvis jeg skulle bruge det som mit portofolio ville jeg selv tage alle billederne men det har der ikke været tid til i denne proces. –  jeg ville i den hele taget have brug mere tid til at arbejde med billederne som der skulle bruges. </p>
 		<p>Jeg har sløjfet den lyserøde farve og gjort det mere neutralt med jeg har prøvet af give det noget kant ved at bruge forskellige billede med forskellige strukturer som baggrunde. </p>
 		</div>
+		
+		
 	</main>
 	
 <footer> 
@@ -72,5 +75,12 @@
 			<a href="undersider /kontakt.html" target="_blank"><i class="fa fa-envelope-o" aria-hidden="true"></i></a>
 		</div>
 	</footer>
+	<script> 
+		function myFunction(){
+			var element = document.getElementById("myNav");
+			
+			element.classList.toggle("myStyle");
+		}
+	</script>
 </body>
 </html>

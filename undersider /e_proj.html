@@ -15,6 +15,7 @@
             <a href="../index.html"><img src="../img/logo.png" alt="logo"></a>
             </div>
             <div id="nav">
+			<button onClick="myFunction()"> <i class="fa fa-bars" aria-hidden="true"></i> </button>
             <nav id="myNav">
 		 <ul>
 			<li><a href="proj_over.html" target="_self" class="aktuelside">Mit arbejde</a>
@@ -52,5 +53,12 @@
 			<a href="undersider /kontakt.html" target="_blank"><i class="fa fa-envelope-o" aria-hidden="true"></i></a>
 		</div>
 	</footer>
+	<script> 
+		function myFunction(){
+			var element = document.getElementById("myNav");
+			
+			element.classList.toggle("myStyle");
+		}
+	</script>
 </body>
 </html>

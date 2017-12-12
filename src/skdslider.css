@@ -1,13 +1,15 @@
 .skdslider{
  width:100%;
+	max-height: 600px;
  position: relative;
  display: block;
  overflow:hidden;
+	z-index: 1;
 }
 
 .skdslider:after {
     content: '';
-    padding-top: 50%; 
+    padding-top: 40%;
     display: block;
 }
 
@@ -34,37 +36,36 @@
 
 .skdslider ul.slide-navs li {
     float: left;
-	background: url("image/slide-bg.png") no-repeat scroll 0 0 transparent;
+	background: url("image/slide-bg.png") no-repeat;
 	height:12px;
 	width:12px;
 	margin-right:4px;
 	cursor:pointer;
 }
 .skdslider ul.slide-navs li.current-slide {
-  background: url("image/slide-bg-active.png") no-repeat scroll 0 0 transparent;
+  background: url("image/slide-bg-active.png") no-repeat;
 }
 
 .skdslider .slide-desc {
-    background: url("image/slide_desc.png") repeat scroll 0 0 transparent;
+    background-color: rgba(0,0,0,0.60);
     left: 0;
-    padding: 0 15px 0 15px;
+    padding: 0 15px 5px 15px;
     position: absolute;
     bottom: 15%;
     max-width: 85%;
 	display:inline-block;
 }
 .skdslider .slide-desc > h2 {
-    color: #CFDB0C;
-    font-family: 'Oswald';
+    color: #DF9B67; /* Sweetbots Third brand color */
+    font-family: 'Lato', sans-serif;
     font-size: 25px;
     margin-bottom: 10px;
     margin-top: 10px;
-    text-transform: uppercase;
 }
 
 .skdslider .slide-desc > p {
     color: #FFFFFF;
-    font-family: 'Oswald';
+    font-family: 'Lato', sans-serif;
     font-size: 16px;
     line-height: 20px;
     margin-top: 5px;
@@ -132,19 +133,36 @@ text-decoration:underline;
 	margin-top:-17px;
 }
 /*Some Responsive CSS */
-@media screen and (max-width:767px) {
+
+
+@media screen and (max-width: 1024px){
+	.skdslider{
+		max-height: 290px;
+	}
+
+	.skdslider .slide-desc{
+		bottom: 10%;
+	}
+
 	.skdslider .slide-desc > h2 {
 		font-size: 20px;
-		margin-bottom: 5px;
+		margin-bottom: 0;
 		margin-top: 5px;
+		padding:0;
 	}
-	
+
 	.skdslider .slide-desc > p {
 		font-size: 14px;
-		line-height: 15px;
-		margin-top: 5px;
+		line-height: 5px;
+		margin: 5px 0;
 	}
 	.skdslider .slide-desc > p a.more {
 		font-size:14px;
+	}
+}
+
+@media all and (max-width: 800px){
+	.skdslider{
+		max-height: 150px;
 	}
 }

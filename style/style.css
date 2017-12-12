@@ -52,6 +52,9 @@ nav ul ul li{
 .aktuelside{
 	text-decoration: line-through;
 }
+.myStyle{
+	display: block;
+}
 h1{
 	color: #8E8E8C;
 	font-size: 3em;
@@ -79,7 +82,7 @@ h4{
 p{ 
 	font-size:20px; 
 	color: black;
-	padding: 2%;
+	padding: 1%;
 }
 /* footer */
 footer{
@@ -120,7 +123,7 @@ footer{
 	height: 100vh;
 }
 #header {
-	background-image: url(../img/desk.jpeg); /* find billede på https://www.pexels.com/search/desk/*/ 
+	background-image: url(../img/forsidebil.jpg); /* billede fra https://www.pexels.com/search/desk/*/ 
     background-repeat: no-repeat;
     width: 100%;
     height: 100vh;
@@ -144,9 +147,11 @@ footer{
 }
 .hero-text h1{
 	font-weight: 400;
+	color: black;
 }
 .hero-text h3{
 	font-weight: 300;
+	color: black;
 }
 #mitarb{
 	color: #8E8E8C; 
@@ -176,20 +181,7 @@ footer{
 	margin: auto;
 	padding: 2%;
 }	
-.forside {
-	width: 100%;
-	display: inline-block; 
-	margin: auto;
-	padding-left: 8%;
-}
 
-.forside img {
-	padding: 2%;
-	
-}
-.forside a {
-	text-decoration: none;
-}
 /*Egen projekter*/ 
 main{
 	height: auto;
@@ -219,11 +211,11 @@ a.button{
 	height: 40px;
 	font-size: 30px;
 	font-weight: 200;
-	background-color: #F4BFF4;
+	background-color: #8e8e8c;
 	display: block;
 	margin-bottom: 4%;
 	text-decoration: none;
-	color: #0E0E0D;
+	color:#F4BFF4;
 	width: 90%;
 	text-align: center;
 }
@@ -263,9 +255,10 @@ a.button{
 }
 /*projekt oversigt side */
 #oversigt {
-	width:40%; 
+	width:60%; 
 	padding:2%; 
 	margin: auto;
+	background-color: #FAFDFB;
 }
 /*kontakt */
 #kontakt{
@@ -275,26 +268,97 @@ a.button{
 	margin-left: 5%;
 }
 /*hvem er jeg ? */
+#content{
+	display: inline-flex;
+	padding: 2%;
+	margin: auto;
+}
 #hvem{
-	width: 60%;
+	width: 50%;
+	background-color:#FAFDFB;
+}
+#mig{
+	width: 50%;
+}
+#mig img {
+	width: 100%;
 }
 /* cv */
-.cv {
+#cv {
 	margin: auto;
-	padding: 2%;
-}
-.secboks {
-	background-color: #FAFDFB;
 	padding: 0;
+	width: 80%;
 }
-.secboks div{
-	
+#cv h2{
+	padding: 0;
+	margin: 0%;
+}
+#cv h3{
+	padding: 0;
+	margin: 0;
+}
+.section{
+	display: inline-flex;
+	background-color:#FAFDFB;
+	margin: 2%;
+	width: 90%;
+	align-content: flex-end;
+	height: 110px;
+}
+.section p{
+	padding-left: 4%;
 }
 .udlogo{
-	max-height: 100px;
+	max-height:100px;
+	padding: 1%;
+	width: 50%;
 	float: right;
 }
-
-.secboks h3{
-	padding: 0;
+.p {
+	width: 50%;
+}
+@media all and (max-width: 800px) {
+	.menu-toggle{
+		display: block;
+	}
+	nav{
+		display: none;
+	}
+	nav ul li{
+		display: block;
+		border-bottom: 1px solid #8e8e8c;
+	}
+	nav ul li:last-child{
+		border: none;
+	}
+	nav a{
+		text-align: center;
+	}
+	/*Responsiv DD menu*/
+	nav ul li:hover > ul{
+	position: static;
+	background-color: #F1C3C4;
+	width: 100%;
+	}
+	/*projektsider */
+	.undersidecontainer{
+		display: block;
+		padding: 2%;
+	}
+	.undersidebillede{
+		display: none;
+	}
+	#knapper{
+		width: 80%;
+	}
+	a.button{
+		width: 100%;
+	
+	}
+	.udvikling{
+		width: 90%;
+	}
+	#ler{
+		width: 90%;
+	}
 }

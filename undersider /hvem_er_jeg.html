@@ -14,6 +14,7 @@
             <a href="../index.html"><img src="../img/logo.png" alt="logo"></a>
             </div>
             <div id="nav">
+			<button onClick="myFunction()"> <i class="fa fa-bars" aria-hidden="true"></i> </button>
             <nav id="myNav">
 		 <ul>
 			<li><a href="proj_over.html" target="_self">Mit arbejde</a>
@@ -27,7 +28,7 @@
 			</ul>
 			</li>
 			<li><a href="læring.html" target="_self">Læring</a></li>
-			<li><a href="hvem_er_jeg.html" target="_self">Hvem er jeg?</a></li>
+			<li><a href="hvem_er_jeg.html" target="_self" class="aktuelside">Hvem er jeg?</a></li>
 			<li><a href="kontakt.html" target="_self">Kontakt</a></li>
 		</ul>
 	</nav>
@@ -37,7 +38,7 @@
 	<main>
 		<div id="content">
 	<div id="mig">
-		<img  src="../img/flow_1_f.jpg" alt="charlotte">
+		<img  src="../img/selvportræt.jpg" alt="charlotte">
 		</div>
 	<div id="hvem"> 
 		<h1>Charlotte Mundt</h1>
@@ -51,44 +52,49 @@
 		<p>Jeg er vild med at udfordre mig selv og at blive udfordret. </p>
 	</div>
 		</div>
+		<div id="cv">
 		<h2> Curriculum vitæ</h2>
-		<section class="cv"> 
+		</div>
 		<h3>Udannelse</h3>
-		<div class="secboks">
-			<div><p>Multimediedesiger
+		<div class="section">
+		<div><p>Multimediedesiger
 			<a href="https://www.cphbusiness.dk/uddannelser/erhvervsakademiuddannelser/multimediedesigner"> Copenhagen Business Academy</a> 
-				<br>
+			<br>
 			Fra August 2017 -</p> </div>
-			<div><img src="../img/logocph.png" alt="cphbusiness" class="udlogo"> </div>
-			</div>
-			<article class="secboks">
-			<p>Web intergrator grundforløb - <a href="http://rts.dk/eud-erhvervsuddannelser/erhvervsuddannelser-eud/146-web-integrator">Roskilde Tekniske Skole </a><br>Januar 2017 - Juli 2017</p><img src="../img/rts_logo.jpg" alt="rts" class="udlogo"> </article>
-			<article class="secboks">
-			<p>HG for studenter - <a href="https://www.brock.dk/erhvervs-uddannelser/erhvervsuddannelse-for-studenter/">Niels Brock Copenhagen Business College </a><br> Marts 2015 - Juli 2015.<img src="../img/nielsbrock_logo.jpg"  alt="nielsbrock" class="udlogo"></p> </article>
-			<article class="secboks">
-			<p>HF - <a href="http://gymnasier.nextkbh.dk/gymnasier/albertslund-gymnasium/hf/">Kongsholm gymnasium og HF</a> <br>August 2012 - Juni 2014</p> <img src="../img/kghf.jpg" alt="Kghf" class="udlogo"></article>
-	
-	<h3>Erfaring</h3>
-		<article class="secboks">
-			<p>Kontorelev <a href="http://www.kea.dk/da/">Københavns Erhvervsakademi</a>
-			<br>August 2015 - Januar 2016</p> <img src="../img/kea.jpg" class="udlogo" alt="KEA">
-			</article>
-			
-		<article class="secboks">
-			<p>Kirkesanger/ Korpige<a href="http://www.vallensbækkirke.dk"> Vallenbæk Kirke </a>
-			<br>Novemer 2006 - August 2010</p> <img src="../img/valk_logo.jpg" class="udlogo" alt="Vallensbæk kirke">
-			</article>
-			
+			<!--<div><img src="../img/logocph.png" alt="cphbusiness" class="udlogo"> </div> Laver kluder når det blivet vidst-->
+		</div>
+		<div class="section">
+		<div class="p"> <p>Web intergrator grundforløb - <a href="http://rts.dk/eud-erhvervsuddannelser/erhvervsuddannelser-eud/146-web-integrator">Roskilde Tekniske Skole </a><br>Januar 2017 - Juli 2017</p></div>
+			<!--<div><img src="../img/rts_logo.jpg" alt="rts" class="udlogo" width="30px"></div> Laver kluder når det blivet vidst-->
+		</div>
+		<div class="section">
+		<div class="p">
+		<p>HG for studenter - <a href="https://www.brock.dk/erhvervs-uddannelser/erhvervsuddannelse-for-studenter/">Niels Brock Copenhagen Business College </a><br> Marts 2015 - Juli 2015.</p>	
+		</div>
+		<div><img src="../img/nielsbrock_logo.jpg"  alt="nielsbrock" class="udlogo"></div>
+		</div>
+		<div class="section">
+		<div class="p"><p>HF - <a href="http://gymnasier.nextkbh.dk/gymnasier/albertslund-gymnasium/hf/">Kongsholm gymnasium og HF</a> <br>August 2012 - Juni 2014</p></div>
+		<!--<div><img src="../img/kghf.jpg" alt="Kghf" class="udlogo"></div> Laver kluder når det blivet vidst-->
+		</div>
 		
+		<h3>Erfaring</h3>
+		<div class="section">
+		<div class="p"><p>Kontorelev - <a href="http://www.kea.dk/da/"> Københavns Erhvervsakademi</a><br>August 2015 - Januar 2016</p></div>
+		<div><img src="../img/kea.jpg" class="udlogo" alt="KEA"></div>
+		</div>
 		
-		<article class="secboks"><h3>Frivilligt arbejde</h3>
-		<ul>
-			<li>Diverse gymnatisk arrangementer <br> 2008 - sommeren 2014</li>
-			<li>Lagermedarbejder - Roskilde Festival<br>Sommeren 2012</li>
-			<li>Rulleskøjteinstruktør - Vallensbæk Rulleskøjte Klub <br> Juni 2009 - September 2010</li>
-		</ul>
-		</article>
-		</section>
+		<div class="section">
+		<div class="p"><p>Kirkesanger/ Korpige - <a href="http://www.vallensbækkirke.dk">  Vallenbæk Kirke </a> <br>Novemer 2006 - August 2010</p></div>
+		<div> <img src="../img/valk_logo.jpg" class="udlogo" alt="Vallensbæk kirke"></div>
+		</div>
+		<h3>Frivilligt arbejde</h3>
+		<div class="section">
+		<div><p>Diverse gymnatisk arrangementer - <br> 2008 - sommeren 2014</p></div></div>
+		<div class="section"><div class="p"><p>Lagermedarbejder - Roskilde Festival<br>Sommeren 2012</p></div></div>
+		
+		<div class="section"><div><p>Rulleskøjteinstruktør - Vallensbæk Rulleskøjte Klub <br> Juni 2009 - September 2010</p></div></div>
+		
 	</main>
 	<footer> 
 		<div id="footercontent">
@@ -98,5 +104,12 @@
 			<a href="undersider/kontakt.html" target="_blank"><i class="fa fa-envelope-o" aria-hidden="true"></i></a>
 		</div>
 	</footer>
+	<script> 
+		function myFunction(){
+			var element = document.getElementById("myNav");
+			
+			element.classList.toggle("myStyle");
+		}
+	</script>
 </body>
 </html>

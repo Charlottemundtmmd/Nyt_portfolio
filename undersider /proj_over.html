@@ -6,6 +6,9 @@
 <title>Mit arbejde</title>
 	<link type="text/css" rel="stylesheet" href="../style/style.css">
 	<script src="https://use.fontawesome.com/d81abb49ed.js"></script> <!-- font awesome -->
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+	<script src="../src/skdslider.js"></script>
+<link type="text/css" rel="stylesheet" href="../src/skdslider.css">
 </head>
 
 <body>
@@ -14,6 +17,7 @@
             <a href="../index.html"><img src="../img/logo.png" alt="logo"></a>
             </div>
             <div id="nav">
+			<button onClick="myFunction()"> <i class="fa fa-bars" aria-hidden="true"></i> </button>
             <nav id="myNav">
 		 <ul>
 			<li><a href="proj_over.html" target="_self">Mit arbejde</a>
@@ -34,11 +38,38 @@
            </div>
         </div>
 
-
-
 	<main>
 		<h1> Mit arbejde</h1>
 		<!-- Slider--> 
+				<div id="demo" class="skdslider">
+<ul>
+<li> <img src="../img/flow_1.jpg" />
+
+<div class="slide-desc">
+<h2>Projekter</h2>
+
+</div>
+</li>
+
+<li><img src="../img/flow_2_1.jpg" />
+<div class="slide-desc">
+
+</div>
+</li>
+	
+<li><img src="../img/flow_3_1.jpg" />
+<div class="slide-desc">
+</div>
+</li>
+
+	<li><img src="../img/flow_4_ 1_1.jpg" />
+<div class="slide-desc">
+
+</div>
+</li>
+
+</ul>
+</div>
 		<div id="oversigt"> 
 		<p>Multimedie designer uddannelse på CPH Business Academy er inddelt i 5 flow, hvor det sidste flow er et eksamens flow.</p>
 		<h3>Hvad er et flow?</h3>
@@ -63,5 +94,26 @@
 			<a href="undersider /kontakt.html" target="_blank"><i class="fa fa-envelope-o" aria-hidden="true"></i></a>
 		</div>
 	</footer>
+	<script> 
+		function myFunction(){
+			var element = document.getElementById("myNav");
+			
+			element.classList.toggle("myStyle");
+		}
+		jQuery(document).ready(function(){
+jQuery('#demo').skdslider({
+
+'delay':5000, // Delay duration between two slides in micro seconds.
+
+'fadeSpeed': 2000, // Fading Speed in micro seconds.
+
+'showNav': true, // It will show/hide navigation icon.
+
+'numericNav': false // If true, navigation will be numeric
+
+});
+
+});
+	</script>
 </body>
 </html>
