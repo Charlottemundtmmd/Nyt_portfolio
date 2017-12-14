@@ -7,8 +7,6 @@
 	<link type="text/css" rel="stylesheet" href="../style/style.css">
 	<script src="https://use.fontawesome.com/d81abb49ed.js"></script> <!-- font awesome -->
 	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
-	<script src="../src/skdslider.js"></script>
-<link type="text/css" rel="stylesheet" href="../src/skdslider.css">
 </head>
 
 <body>
@@ -40,35 +38,34 @@
         </div>
 	<main>
 	<h1>Læring på 1. semester</h1>	
-		<!-- brug jquery slider --> 
-		<div id="demo" class="skdslider">
-<ul>
-<li> <img src="../img/flow_1.jpg" />
+<!-- jquery --> 
+<div class="slideshow-container">
 
-<div class="slide-desc">
-<h2>Projekter</h2>
-
+<div class="mySlides fade">
+  <div class="numbertext">1 / 3</div>
+  <img src="../img/flow_1.jpg" style="width:100%" class="slidesimg">
+  <div class="text"></div>
 </div>
-</li>
 
-<li><img src="../img/flow_2_1.jpg" />
-<div class="slide-desc">
-
+<div class="mySlides fade">
+  <div class="numbertext">2 / 3</div>
+  <img src="../img/flow_2_1.jpg" style="width:100%" class="slidesimg">
+  <div class="text"></div>
 </div>
-</li>
-	
-<li><img src="../img/flow_3_1.jpg" />
-<div class="slide-desc">
+
+<div class="mySlides fade">
+  <div class="numbertext">3 / 3</div>
+  <img src="../img/flow_3_1.jpg" style="width:100%" class="slidesimg">
+  <div class="text"></div>
 </div>
-</li>
-
-	<li><img src="../img/flow_4_ 1_1.jpg" />
-<div class="slide-desc">
-
+   
 </div>
-</li>
+<br>
 
-</ul>
+<div style="text-align:center">
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+  <span class="dot"></span> 
 </div>
 	<div id="ler">
 	<h3>Hvad har jeg lært på 1. Semester? </h3>
@@ -91,7 +88,7 @@
 		<a href="3_proj.html"> Se flow 3 projektet her</a>
 		<h4>Læring - flow 4</h4>
 		<img src="../img/flow_4_ 1_1.jpg" alt="flow 4" class="lerbilled">
-		<p> Vores første gruppearbejde, vi havde i gruppen et godt sammenarbejde på trods af sygdom i gruppen som gjorde at vi ikke kunne mødes og arbejde sammen og meget måtte klare langt de fleste ting over Facebook og github. Vi misforstod dog hvad en e-commerce var, fordi vi søgte vores viden på google hvor vi fandt fem forskellige defineringer af hvad e-commmerce. </p>
+		<p> Vores første gruppearbejde, vi havde i gruppen et godt sammenarbejde på trods af sygdom i gruppen som gjorde at vi ikke kunne mødes og arbejde sammen og meget måtte klare langt de fleste ting over Facebook og github. Vi misforstod dog hvad en e-commerce var, fordi vi søgte vores viden på google hvor vi fandt fem forskellige defineringer af hvad e-commmerce er. </p>
 		<a href="4_proj.html">Se flow 4 projektet her</a>
 		<h4> Læring - Flow 5 - Eksamen</h4>
 		<p>Jeg var lidt presset følte overhovedet ikke jeg var klar til eksamen, vi var jo lige startet – sådan føles det i hvert fald. Jeg startede med at danne mig et overblik over alle kravene som der var til opgaven. Og startede jeg med at dele opgaven op i faser, jeg lavede en tidplan noget jeg havde en smule svært ved. Jeg fandt ud af hvor vigtig det var for mig at have et overblik, jeg brugt milepæle i mit gantt kort for ar vide jeg kan ikke start på en opgave før jeg har lavet det her. </p>
@@ -112,7 +109,7 @@
 			<a href="https://github.com/Charlottemundtmmd" target="_blank"><i class="fa fa-github" aria-hidden="true"></i></a>
 			<a href="https://www.linkedin.com/in/charlotte-mundt-312343146/" target="_blank"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
 			<a href="https://www.instagram.com/Charlottemundt/" target="_blank"><i class="fa fa-instagram" aria-hidden="true"></i></a>
-			<a href="undersider /kontakt.html" target="_blank"><i class="fa fa-envelope-o" aria-hidden="true"></i></a>
+			<a href="../undersider /undersider /kontakt.html" target="_blank"><i class="fa fa-envelope-o" aria-hidden="true"></i></a>
 		</div>
 	</footer>
 	<script> 
@@ -121,20 +118,25 @@
 			
 			element.classList.toggle("myStyle");
 		}
-		jQuery(document).ready(function(){
-jQuery('#demo').skdslider({
+	var slideIndex = 0;
+showSlides();
 
-'delay':5000, // Delay duration between two slides in micro seconds.
-
-'fadeSpeed': 2000, // Fading Speed in micro seconds.
-
-'showNav': true, // It will show/hide navigation icon.
-
-'numericNav': false // If true, navigation will be numeric
-
-});
-
-});
+function showSlides() {
+    var i;
+    var slides = document.getElementsByClassName("mySlides");
+    var dots = document.getElementsByClassName("dot");
+    for (i = 0; i < slides.length; i++) {
+       slides[i].style.display = "none";  
+    }
+    slideIndex++;
+    if (slideIndex > slides.length) {slideIndex = 1}    
+    for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+    }
+    slides[slideIndex-1].style.display = "block";  
+    dots[slideIndex-1].className += " active";
+    setTimeout(showSlides, 2000); // Change image every 2 seconds
+}
 	</script>
 </body>
 </html>

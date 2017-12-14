@@ -55,6 +55,12 @@ nav ul ul li{
 .myStyle{
 	display: block;
 }
+button{
+	display: none;
+}
+.fa-bars{
+	display: none;
+}
 h1{
 	color: #8E8E8C;
 	font-size: 3em;
@@ -72,12 +78,15 @@ h3 {
 	font-weight: 300; 
 	font-size: 30px;
 	padding: 2%;
+	margin:0;
 }
 h4{
 	color: #8e8e8c; 
 	font-weight: 300; 
 	font-size:25px;
-	padding: 2%
+	padding: 2%;
+	margin:0;
+	
 }
 p{ 
 	font-size:20px; 
@@ -123,7 +132,7 @@ footer{
 	height: 100vh;
 }
 #header {
-	background-image: url(../img/forsidebil.jpg); /* billede fra https://www.pexels.com/search/desk/*/ 
+	background-image: url(../img/desk.jpg); /* billede fra https://www.pexels.com/search/desk/*/ 
     background-repeat: no-repeat;
     width: 100%;
     height: 100vh;
@@ -135,7 +144,7 @@ footer{
 	padding: 0; 
 	display: inline;
 }
-
+/* forside teks på billede*/
 .hero-text {
 	text-align: center;
 	position: absolute;
@@ -176,12 +185,23 @@ footer{
 #flowmenu ul li a:hover{
 	text-decoration: underline;
 }
-#imgfor  {
+#fancyboks{
 	width: 100%;
-	margin: auto;
-	padding: 2%;
-}	
-
+	margin: 0 auto;
+	text-align: center;
+}
+#fancyboks a{
+	text-decoration: none;
+}
+.fancydiv{
+	display: inline-flex;
+	margin: 10 auto;	
+}
+.fancybokimg{
+	max-height:200px;
+	width: 20%;
+	justify-content: center;
+}
 /*Egen projekter*/ 
 main{
 	height: auto;
@@ -212,6 +232,7 @@ a.button{
 	font-size: 30px;
 	font-weight: 200;
 	background-color: #8e8e8c;
+	border-radius: 50px;
 	display: block;
 	margin-bottom: 4%;
 	text-decoration: none;
@@ -241,6 +262,78 @@ a.button{
 .vejrapps iframe {
 	justify-content: space-between;
 }
+/*Oversigt + Læring  sider*/
+
+/* Slideshow container *//* https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_slideshow_auto*/
+.slideshow-container {
+  max-width: 100%;
+  position: relative;
+  margin: auto;
+
+}
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .text {font-size: 11px}
+}
+
+.slidesimg {
+	width: 100%;
+	max-height:100vh;
+}
+
 /* Læring */
 #ler{
 	width: 60%;
@@ -250,7 +343,6 @@ a.button{
 }
 .lerbilled{
 	
-
 	width: 100%;
 }
 /*projekt oversigt side */
@@ -259,6 +351,15 @@ a.button{
 	padding:2%; 
 	margin: auto;
 	background-color: #FAFDFB;
+}
+.flowlink{
+	list-style: none;
+	padding: 0;
+}
+.flowlink a{
+	text-decoration: none;
+	padding: 0;
+	color: black;
 }
 /*kontakt */
 #kontakt{
@@ -318,9 +419,17 @@ a.button{
 	width: 50%;
 }
 @media all and (max-width: 800px) {
-	.menu-toggle{
+	button{
 		display: block;
+		float: right;
+		font-size: 20px;
 	}
+	.fa-bars{
+		display: block;
+		float: right;
+		font-size: 20px;
+	}
+	
 	nav{
 		display: none;
 	}
@@ -337,7 +446,7 @@ a.button{
 	/*Responsiv DD menu*/
 	nav ul li:hover > ul{
 	position: static;
-	background-color: #F1C3C4;
+	/*background-color: #F4BFF4;*/
 	width: 100%;
 	}
 	/*projektsider */
@@ -361,4 +470,74 @@ a.button{
 	#ler{
 		width: 90%;
 	}
+	#mig img {
+	width: 80%;
+	display: none;
+}
+	#hvem{
+		width: 100%;
+	}
+	#mig{
+		width: 0%;
+	}
+	.udlogo{
+		display: none;
+	}
+}
+@media all and (max-width: 1200px) {
+	button{
+		display: block;
+		float: right;
+		font-size: 20px;
+	}
+	.fa-bars{
+		display: block;
+		float: right;
+		font-size: 20px;
+	}
+	
+	nav{
+		display: none;
+	}
+	nav ul li{
+		display: block;
+		border-bottom: 1px solid #8e8e8c;
+	}
+	nav ul li:last-child{
+		border: none;
+	}
+	nav a{
+		text-align: center;
+	}
+	/*Responsiv DD menu*/
+	nav ul li:hover > ul{
+	position: static;
+	/*background-color: #F4BFF4;*/
+	width: 100%;
+	}
+	/*projektsider */
+	.undersidecontainer{
+		display: block;
+		padding: 2%;
+	}
+	.undersidebillede{
+		display: none;
+	}
+	#knapper{
+		width: 80%;
+	}
+	a.button{
+		width: 100%;
+	
+	}
+	.udvikling{
+		width: 90%;
+	}
+	#ler{
+		width: 90%;
+	}
+	#mig img {
+	width: 80%;
+	/*display: none;*/
+}
 }
