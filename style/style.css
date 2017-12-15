@@ -2,7 +2,6 @@
 @import url('https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600');/*google font import*/
 /* fælles design på alle sider*/
 body{
-	
 	font-family: 'Montserrat', sans-serif;
 	background-color: #F1F1F1;
 	padding: 0; 
@@ -21,6 +20,7 @@ nav ul{
 	padding: 0;
 	float: right;
 	width: 40%; 
+	z-index: 40000;
 	
 }
 nav ul li{
@@ -66,12 +66,14 @@ h1{
 	font-size: 3em;
 	padding: 2%;
 	font-weight: 400;
+	margin: 0;
 }
 h2{
 	color: #8E8E8C;
 	font-size: 2em;
 	font-weight: 400;
 	padding: 2%;
+	margin:0;
 }
 h3 {
 	color: #8E8E8C;
@@ -91,7 +93,8 @@ h4{
 p{ 
 	font-size:20px; 
 	color: black;
-	padding: 1%;
+	padding: 2%;
+	margin: 0;
 }
 /* footer */
 footer{
@@ -198,7 +201,7 @@ footer{
 	margin: 10 auto;	
 }
 .fancybokimg{
-	max-height:200px;
+	max-height:240px;
 	width: 20%;
 	justify-content: center;
 }
@@ -236,8 +239,8 @@ a.button{
 	display: block;
 	margin-bottom: 4%;
 	text-decoration: none;
-	color:#F4BFF4;
-	width: 90%;
+	color:#FAFDFB;
+	width: 80%;
 	text-align: center;
 }
 .imgcontainer{
@@ -266,7 +269,7 @@ a.button{
 
 /* Slideshow container *//* https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_slideshow_auto*/
 .slideshow-container {
-  max-width: 100%;
+  max-width: 90%;
   position: relative;
   margin: auto;
 
@@ -356,30 +359,30 @@ a.button{
 	list-style: none;
 	padding: 0;
 }
-.flowlink a{
-	text-decoration: none;
-	padding: 0;
-	color: black;
-}
 /*kontakt */
+main{
+	margin: 2%;
+}
 #kontakt{
 	background-color: #FAFDFB;
 	width: 40%;
 	text-align: center;
-	margin-left: 5%;
+	margin: auto;
+	padding: inherit;
 }
 /*hvem er jeg ? */
 #content{
 	display: inline-flex;
 	padding: 2%;
 	margin: auto;
+	justify-content: space-between;
 }
 #hvem{
-	width: 50%;
+	width: 49%;
 	background-color:#FAFDFB;
 }
 #mig{
-	width: 50%;
+	width: 49%;
 }
 #mig img {
 	width: 100%;
@@ -404,10 +407,12 @@ a.button{
 	margin: 2%;
 	width: 90%;
 	align-content: flex-end;
-	height: 110px;
 }
 .section p{
 	padding-left: 4%;
+}
+.section div{
+	padding: 1%;
 }
 .udlogo{
 	max-height:100px;
@@ -459,9 +464,11 @@ a.button{
 	}
 	#knapper{
 		width: 80%;
+		margin-bottom: 10%;
 	}
 	a.button{
 		width: 100%;
+		font-size:20px;
 	
 	}
 	.udvikling{
@@ -481,6 +488,12 @@ a.button{
 		width: 0%;
 	}
 	.udlogo{
+		display: none;
+	}
+	#oversigt{
+		width: 90%;
+	}
+	#footercontent{
 		display: none;
 	}
 }
@@ -538,6 +551,8 @@ a.button{
 	}
 	#mig img {
 	width: 80%;
-	/*display: none;*/
 }
+	#oversigt{
+		width: 90%;
+	}
 }
